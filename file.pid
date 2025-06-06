@@ -1,0 +1,35 @@
+const fs = require('fs');
+const process = require('process');
+
+// Function to create a PID file
+function createPidFile(pidFilePath) {
+  try {
+    fs.writeFileSync(pidFilePath, process.pid.toString());
+    console.log(`PID file created at ${pidFilePath} with PID ${process.pid}`);
+  } catch (error) {
+    console.error(`Error creating PID file: ${error}`);
+    process.exit(1);
+  }
+}
+
+// Function to delete a PID file
+function deletePidFile(pidFilePath) {
+  try {
+    fs.unlinkSync(pidFilePath);
+    console.log(`PID file deleted at ${pidFilePath}`);
+  } catch (error) {
+    console.error(`Error deleting PID file: ${error}`);
+  }
+}
+
+// Create a PID file
+const pidFilePath = './app.pid';
+createPidFile(pidFilePath);
+
+// Delete the PID file when the process exits
+process.on('exit', () => {
+  deletePidFile(pidFilePath);
+});
+
+// Your application code here
+console.log('Application started');
