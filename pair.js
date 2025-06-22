@@ -90,13 +90,13 @@ Dont forget to fork the repo ⬇️
 
 https://github.com/Naruto632/NARUTO-XMD
 
-> *©  𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 𝙏𝙃𝙐𝙂𝙆𝙀𝙀𝘿-𝙏𝙀𝘾𝙃 🖤*`; 
+> *©  𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 𝙏𝙃𝙐𝙂𝙆𝙀𝙀𝘿-𝙏𝙀𝘾𝙃 🔮*`; 
                         await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
 title: "𝙏𝙃𝙐𝙂𝙆𝙀𝙀𝘿-𝙏𝙀𝘾𝙃",
-thumbnailUrl: "https://i.imgur.com/GVW7aoD.jpeg",
+thumbnailUrl: "https://files.catbox.moe/xbojdy.jpg",
 sourceUrl: "https://whatsapp.com/channel/0029VbAaddE3mFYETAiho63t",
 mediaType: 1,
 renderLargerThumbnail: true
@@ -112,7 +112,7 @@ text: desc,
 contextInfo: {
 externalAdReply: {
 title: "NARUTO-XMD",
-thumbnailUrl: "https://i.imgur.com/GVW7aoD.jpeg",
+thumbnailUrl: "<div class="glowing-text"https://files.catbox.moe/xbojdy.jpg",
 sourceUrl: "https://whatsapp.com/channel/0029VbAaddE3mFYETAiho63t",
 mediaType: 2,
 renderLargerThumbnail: true,
@@ -148,3 +148,4 @@ setInterval(() => {
     process.exit();
 }, 180000); //30min*/
 module.exports = router;
+    
